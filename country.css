@@ -1,0 +1,111 @@
+.container-single {
+    /* background-color: red; */
+    /* height: 1200px; */
+    max-width: 1200px;
+    margin: auto;
+}
+
+.backbtncontiner {
+    /* margin-block: 20px; */
+    padding-inline: 20px;
+    padding-block: 50px;
+    /* background-color: green; */
+}
+
+.backbtn {
+    width: max-content;
+    background-color: var(--Elements);
+    padding: 10px 25px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.121);
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.backbtn:hover {
+    scale: 1.05;
+}
+
+.main-container {
+    /* background-color: red; */
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-inline: 20px;
+    display: flex;
+    gap: 50px;
+}
+
+.imageContainer {
+    max-width: 500px;
+    height: fit-content;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.121);
+}
+
+.imageContainer img {
+    width: 100%;
+}
+
+.content {
+    padding-left: 50px;
+}
+
+.Country_btn {
+    width: max-content;
+    background-color: var(--Elements);
+    padding: 3px 20px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.121);
+    border-radius: 3px;
+    /* margin-inline: 10px; */
+    cursor: pointer;
+}
+
+#countryarr {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.Country_btn:hover {
+    scale: 1.05;
+}
+
+.Country_btn a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.border-country {
+    margin-block: 30px;
+}
+
+.list-items {
+    margin-top: 20px;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 5px;
+    column-gap: 100px;
+}
+
+@media (max-width:1200px) {
+    .main-container {
+        flex-direction: column;
+    }
+    .content {
+        padding: 0;
+    }
+    .imageContainer img {
+        width: 100%;
+    }
+    .list-items {
+        display: block;
+        margin-bottom: 100px;
+    }
+    .list-items p {
+        margin-block: 5px;
+    }
+}
